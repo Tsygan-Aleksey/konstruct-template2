@@ -1,5 +1,5 @@
 .header-container{
-    height: 769px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,7 +20,7 @@
     justify-content: center;
 }
 .header-container__title{
-    font-family: BebasNeueBold;
+    font-family: 'Bebas Neue', cursive;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 5.709374904632568px;
@@ -54,7 +54,6 @@
     position: sticky;
     left: 0px;
     top: 0px;
-    height: 65px;
     border: 1px solid #E6E6E6;
     margin: auto;
     display: flex;
@@ -67,6 +66,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 24px 0px 23px 0px;
+    background: white;
 }
 
 .navigation__links a{
@@ -79,6 +80,7 @@
     letter-spacing: 1.0909091234207153px;
     text-align: center;
     color: #48555B;
+    background: white;
 
 
 }
@@ -103,18 +105,18 @@
 .navigation__links a:nth-child(4){
     margin-right: 30px;
 }
-.about-us{
 
+.about-us__container{
+    margin:0 auto;
+    margin-top: 57px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 344px;
-    min-width: 941px;
-
-
+    width: 941px;
 }
-.about-us__container{
+.about-us__subhead{
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -181,11 +183,26 @@
 }
 .about-us__skill{
     margin-right: 20px;
+    width: 140px;
+    height: 224px;
+    box-sizing: border-box;
+    border: none;
+    padding:15px 0px 0px 14px;
+    background: url("image/hands.jpg") no-repeat center;
+    background-size: cover;
+}
+.about-us__skill:first-child{
+    background: url("image/ruler.png") no-repeat center;
+    background-size: cover;
 }
 .about-us__skill:last-child{
     margin-right: 0px;
+    background: url("image/build.jpg") no-repeat center;
+    background-size: cover;
 }
-.about-us__skill span {
+.about-us__skill span{
+    display: block;
+    width: 40px;
     font-family: Open Sans;
     font-size: 24px;
     font-style: normal;
@@ -195,14 +212,8 @@
     text-align: left;
     color: white;
     position: absolute;
-    margin: 15px 0px 0px 14px;
+}
 
-}
-.about-us__image{
-    width: 140px;
-    height: 224px;
-    background-color: #D8D8D8;
-}
 .block-heading_left{
     align-items: start;
 }
@@ -240,14 +251,16 @@
     min-width: 941px;
     margin-bottom: 78px;
 }
-.services{
+
+.services__container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 940px;
     height: 446px;
     justify-content: space-between;
+    margin: auto;
     margin-top: 118px;
-
 }
 .capabilities{
     display: flex;
@@ -257,6 +270,8 @@
     justify-content: center;
     align-items: start;
     border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+
 
 
 }
@@ -295,16 +310,21 @@
     justify-content: space-between;
 }
 .build{
+    height: 499px;
+    background: url("image/town.jpg") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 120px;
+}
+.build__container{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 499px;
-    background: url("image/town.jpg") no-repeat center;
-    background-size: cover;
+    width: 350px;
+    margin: auto;
 }
 .build__title{
-    width: 350px;
     font-family: Open Sans;
     font-size: 30px;
     font-style: normal;
@@ -316,10 +336,8 @@
     margin: 120px 0px 35px 0px;
 }
 .connect{
-    height: 100px;
     background: #171819;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .connect__container{
@@ -327,6 +345,7 @@
     align-items: center;
     width: 685px;
     justify-content: space-between;
+    margin: 30px 0px;
 }
 .connect__title{
     font-family: Open Sans;
@@ -369,14 +388,14 @@
     text-align: left;
     color: #48555B;
 }
-
-.container-footer__contacts{
-    height: 240px;
+.container-footer{
     background: #141A20;
+}
+.container-footer__contacts{
     display: flex;
     align-items: start;
     justify-content: center;
-
+    margin-bottom: 40px;
 
 }
 .container-footer__contacts>div{
@@ -399,12 +418,22 @@
     justify-content: center;
     flex-direction: column;
     margin-right: 71px;
+    width: 250px;
+    height: 148px;
 
 }
 .container-footer__our-company span:last-child{
     width: 250px;
+
 }
 .container-footer__copyright{
+    background: #171819;
+    display: flex;
+    justify-content: center;
+
+}
+.container-footer__copyright span{
+    margin: 22px 0px 23px 0px;
     font-family: Open Sans;
     font-size: 11px;
     font-style: normal;
@@ -413,15 +442,11 @@
     letter-spacing: 0.8461539149284363px;
     text-align: left;
     color: #FFFFFF;
-    height: 60px;
-    background: #171819;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
-.container-footer__our-company svg{
-    margin: 19.6px 0px 16.41px 0px;
+.container-footer__our-company img{
+    height: 21px;
+    margin: 19.6px 0px 33.53px 0px;
 }
 .container-links__header{
     font-family: Open Sans;
@@ -490,6 +515,13 @@
     display: flex;
     justify-content: space-between;
 }
+.container-footer__socials a img{
+    width: 12.04px;
+    height: 12.04px;
+    background-color: white;
+    border-radius: 15%;
+}
+
 .container-footer__socials a{
     text-decoration: none;
 }
